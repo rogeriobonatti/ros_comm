@@ -699,7 +699,10 @@ bool Recorder::scheduledCheckDisk() {
         return true;
 
     check_disk_next_ += ros::WallDuration().fromSec(20.0);
-    return checkDisk();
+    // return checkDisk();
+    // HACK: earase at some point:
+    writing_enabled_ = true;
+    return true;
 }
 
 bool Recorder::checkDisk() {
