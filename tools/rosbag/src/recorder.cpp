@@ -523,7 +523,7 @@ void Recorder::doRecord() {
 
     try
     {
-        checkDisk();
+        //checkDisk();
         // HACK: earase at some point:
         writing_enabled_ = true;
         //return true;
